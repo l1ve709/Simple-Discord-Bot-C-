@@ -2,17 +2,30 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-const task1 = require('./tasks/task1');
-const task2 = require('./tasks/task2');
+const taskX = require('./node/taskX');
+const taskY = require('./node/taskY');
+const taskZ = require('./node/taskZ');
 
-app.get('/task1', (req, res) => {
-    task1.executeTask1();
+
+app.get('/taskX', (req, res) => {
+    taskX.executeTaskX();
     res.send('task 1 xxx l1ve709');
 });
 
-app.get('/task2', (req, res) => {
-    task2.executeTask2();
-    res.send('task 2 xxx l1ve709');
+app.get('/taskZ', (req, res) => {
+    taskY.executeTaskZ();
+    res.send('task xyz running');
+});
+
+app.get('/taskY', (req, res) => {
+    taskZ.executeTaskY();
+    res.send('task xyz running');
+});
+
+
+app.get('/taskW', (req, res) => {
+    taskW.executeTaskW();
+    res.send('task xyzW running');
 });
 
 app.listen(port, () => {
