@@ -10,5 +10,5 @@ void Logger::log(const std::string& message) {
         logFile << std::ctime(&now) << ": " << message << std::endl;
         logFile.close();
     }
-    std::cout << "[LOG] " << message << std::endl;
+    std::cout << "[LOG] " << message << std::endl
 }
