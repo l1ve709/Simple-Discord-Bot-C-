@@ -16,5 +16,5 @@ void Bot::start() {
     commandManager.executeCommand("/kick user2");
     commandManager.executeCommand("/warn user3 spam");
     commandManager.executeCommand("/joke");
-    commandManager.executeCommand("/trivia")
+    commandManager.executeCommand("/trivia");
 }
