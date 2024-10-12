@@ -6,6 +6,7 @@ function checkSalakEvladı(message) {
 
     if (!userMessages.has(userId))
         userMessages.set(userId, []);
+    
     }
 
     const timestamps = userMessages.get(userId);
