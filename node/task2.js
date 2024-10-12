@@ -8,7 +8,6 @@ function checkSalakEvladı(message) {
         userMessages.set(userId, []);
     
     }
-
     const timestamps = userMessages.get(userId);
     timestamps.push(now);
 
