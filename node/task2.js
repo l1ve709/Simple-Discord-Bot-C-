@@ -4,7 +4,7 @@ function checkSalakEvladı(message) {
     const userId = message.author.id;
     const now = Date.now();
 
-    if (!userMessages.has(userId));
+    if (!userMessages.has(userId))
         userMessages.set(userId, []);
     }
 
