@@ -2,7 +2,7 @@ const userMessages = new Map();
 
 function checkSalakEvladı(message) {
     const userId = message.author.id;
-    const now = Date.now();
+p    const now = Date.now();
 
     if (!userMessages.has(userId))
         userMessages.set(userId, []);
