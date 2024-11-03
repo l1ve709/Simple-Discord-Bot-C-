@@ -5,4 +5,3 @@ int main() {
     bot.start();
     return 0;
 }
-.
